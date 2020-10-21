@@ -1,6 +1,6 @@
 const Term = () => (
   <main>
-    <section class="block">
+    <section className="block">
       <h1>Mentions légales</h1>
       <h2>Informations administratives</h2>
       <ul>

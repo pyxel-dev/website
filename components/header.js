@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const Header = () => (
   <header className="header" role="heading">
     <a href="/">
@@ -13,12 +11,6 @@ const Header = () => (
         </svg>
       </figure>
     </a>
-    <nav role="navigation">
-      <ul>
-        <li><Link href="/projects"><a>Projects</a></Link></li>
-        <li><Link href="/courses"><a>Courses</a></Link></li>
-      </ul>
-    </nav >
     <style jsx>{`
       .header {
         display: flex;
@@ -26,29 +18,8 @@ const Header = () => (
         justify-content: space-between;
         align-items: center;
       }
-
-      nav > ul {
-        display: flex;
-      }
-
-      li:not(:first-of-type) {
-        margin-left: 1rem;
-      }
-
-      a {
-        font-family: 'heading';
-        text-transform: uppercase;
-        color: #ccc;
-        text-decoration: none;
-        transition: all .3s ease-in-out;
-      }
-
-      a:hover,
-      a.active {
-        color: #000;
-      }
 `}</style>
-  </header >
+  </header>
 );
 
 export default Header;

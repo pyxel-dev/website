@@ -1,13 +1,8 @@
-import Link from 'next/link';
-
 const Training = () => (
   <section className="block training">
     <article>
       <h2>Formations</h2>
       <p>Nous assurons des formations au sein de clients désireux de se former aux nouvelles technologies. Notre expertise couvre une large panel de compétences. Pour en savoir plus, contactez nous.</p>
-      <div>
-        <Link href="training"><a>See training</a></Link>
-      </div>
     </article>
     <style jsx>{`
       article {
@@ -21,24 +16,6 @@ const Training = () => (
 
       h2 {
         margin-bottom: 2rem;
-      }
-
-      div {
-        display: flex;
-        margin: 5rem auto 0;
-      }
-
-      a {
-        color: #fff;
-        padding: 1rem;
-        border: thin solid #fff;
-        text-decoration: none;
-        transition: .3s ease-in-out all;
-      }
-
-      a:hover {
-        background-color: #fff;
-        color: #000;
       }
     `}</style>
   </section>
