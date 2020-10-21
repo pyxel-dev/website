@@ -1,0 +1,18 @@
+{
+  "name": "pyxel",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:prod": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@pyxeldev/reset-css": "^1.1.0",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
+  }
+}
