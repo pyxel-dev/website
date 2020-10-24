@@ -27,8 +27,8 @@ const Skill = () => (
         <span>React</span>
       </li>
       <li>
-        <i className="icon-vue-dot-js"></i>
-        <span>Vue</span>
+        <i className="icon-node-dot-js"></i>
+        <span>NodeJS</span>
       </li>
       <li>
         <i className="icon-typescript"></i>
@@ -47,16 +47,8 @@ const Skill = () => (
         <span>Webpack</span>
       </li>
       <li>
-        <i className="icon-jest"></i>
-        <span>Jest</span>
-      </li>
-      <li>
         <i className="icon-ionic"></i>
         <span>Ionic</span>
-      </li>
-      <li>
-        <i className="icon-node-dot-js"></i>
-        <span>NodeJS</span>
       </li>
       <li>
         <i className="icon-mongodb"></i>
@@ -103,10 +95,6 @@ const Skill = () => (
         <span>Gitlab</span>
       </li>
       <li>
-        <i className="icon-npm"></i>
-        <span>NPM</span>
-      </li>
-      <li>
         <i className="icon-bootstrap"></i>
         <span>Bootstrap</span>
       </li>
@@ -117,14 +105,6 @@ const Skill = () => (
       <li>
         <i className="icon-wordpress"></i>
         <span>Wordpress</span>
-      </li>
-      <li>
-        <i className="icon-prettier"></i>
-        <span>Prettier</span>
-      </li>
-      <li>
-        <i className="icon-visualstudiocode"></i>
-        <span>VS Code</span>
       </li>
     </ul>
     <style jsx>{`
