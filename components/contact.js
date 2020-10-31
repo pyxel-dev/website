@@ -23,62 +23,25 @@ const Contact = () => (
         max-width: 600px;
       }
 
-      form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .form-infos {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+      h2 {
         margin-bottom: 2rem;
       }
 
-      .form-infos div {
-        width: 100%;
+      .contact {
+        display: flex;
+        margin: 5rem auto;
       }
 
-      .form-infos div:first-of-type {
-        margin-right: 2rem;
-      }
-
-      label,
-      input,
-      textarea {
-        width: 100%;
-        display: block;
-        text-align: left;
-      }
-
-      label {
-        margin-bottom: .5rem;
-        font-weight: bold;
-      }
-
-      input,
-      textarea {
-        padding: 1rem;
-        font-size: 1rem;
-        font-family: sans-serif;
-        appearance: none;
-        border: thin solid #000;
-      }
-
-      button {
-        appearance: none;
-        margin: 2rem auto 0;
-        background: #fff;
+      a {
+        margin: auto;
         color: #000;
         padding: 1rem;
         border: thin solid #000;
         text-decoration: none;
         transition: .3s ease-in-out all;
-        cursor: pointer;
       }
 
-      button:hover {
+      a:hover {
         background-color: #000;
         color: #fff;
       }
