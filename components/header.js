@@ -1,6 +1,9 @@
+import Link from 'next/link';
+
 const Header = () => (
   <header className="header" role="heading">
-    <a href="/">
+    <Link href="/">
+    <a>
       <figure>
         <svg width="50px" height="50px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -11,12 +14,40 @@ const Header = () => (
         </svg>
       </figure>
     </a>
+    </Link>
+    <nav role="navigation">
+      <ul>
+        <li><Link href="/training"><a>Formations</a></Link></li>
+      </ul>
+    </nav>
     <style jsx>{`
       .header {
         display: flex;
         padding: 1rem;
         justify-content: space-between;
         align-items: center;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      li:not(:first-of-type) {
+        margin-left: 1rem;
+      }
+
+      li a {
+        font-family: 'heading';
+        text-transform: uppercase;
+        color: #ccc;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+      }
+
+      li a:hover,
+      li a.active {
+        color: #000;
       }
 `}</style>
   </header>

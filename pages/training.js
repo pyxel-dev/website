@@ -1,12 +1,12 @@
 import Header from "../components/header";
-import Term from "../components/term";
+import TrainingView from "../components/training-view";
 import Footer from "../components/footer";
 
-export default function Terms() {
+export default function Training() {
   return (
     <>
       <Header />
-      <Term />
+      <TrainingView />
       <Footer />
       <style global jsx>{`
         .block {

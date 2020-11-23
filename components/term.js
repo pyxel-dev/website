@@ -23,17 +23,6 @@ const Term = () => (
     </section>
 
     <style jsx>{`
-      main {
-        display: flex;
-        flex-direction: column;
-      }
-      .block {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        max-width: 600px;
-        margin: 10rem auto;
-      }
       h2 {
         margin: 2rem 0 1rem;
       }

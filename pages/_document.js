@@ -13,6 +13,19 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <style global jsx>{`
+            :host {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .block {
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              margin: 10rem auto;
+            }
+      `}</style>
         </body>
       </Html>
     )
