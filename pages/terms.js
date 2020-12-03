@@ -10,6 +10,10 @@ export default function Terms() {
       <Footer />
       <style global jsx>{`
         .block {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin: 10rem auto;
           max-width: 600px;
         }
   `}</style>
