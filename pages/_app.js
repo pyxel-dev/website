@@ -11,6 +11,7 @@ function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>Pyxel</title>
         <link rel="shortcut icon" href="/images/favicon.png" />
+        <script data-host="https://myanalytics.dev" data-dnt="false" src="https://myanalytics.dev/js/script.js" id="ZwSg9rf6GA" async defer></script>
         <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-179032245-1`}
