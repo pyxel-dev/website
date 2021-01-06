@@ -46,6 +46,7 @@ const TrainingView = () => (
       }
 
       .coming {
+        width: 100%;
         border: thin dashed #bbb;
         color: #bbb;
         text-align: center;

@@ -18,6 +18,7 @@ const Header = () => (
     <nav role="navigation">
       <ul>
         <li><Link href="/training"><a>Formations</a></Link></li>
+        <li><Link href="/project"><a>Projets</a></Link></li>
       </ul>
     </nav>
     <style jsx>{`
