@@ -1,12 +1,12 @@
 import Header from "../components/header";
-import TrainingView from "../components/training-view";
 import Footer from "../components/footer";
+import ProjectView from "../components/project-view";
 
 export default function Training() {
   return (
     <>
       <Header />
-      <TrainingView />
+      <ProjectView />
       <Footer />
       <style global jsx>{`
         .block {
