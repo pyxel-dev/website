@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import { i18n, withTranslation } from '../i18n';
+import PropTypes from 'prop-types';
 
-const Footer = () => (
+const Footer = ({ t }) => (
   <footer>
     <div>
       <ul>
@@ -28,8 +30,15 @@ const Footer = () => (
       <ul>
         <li>
           <Link href="/terms">
-            <a>Mentions légales</a>
+            <a>{t('legal')}</a>
           </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span onClick={() => i18n.changeLanguage('en')}>EN</span>
+          <> / </>
+          <span onClick={() => i18n.changeLanguage('fr')}>FR</span>
         </li>
       </ul>
     </div>
@@ -60,8 +69,8 @@ const Footer = () => (
         padding: .5rem;
       }
 
-      ul:last-of-type {
-        margin-top: 1rem;
+      ul:nth-of-type(2) {
+        margin: 1rem auto;
       }
 
       li:not(:first-of-type) {
@@ -70,23 +79,27 @@ const Footer = () => (
 
 
 
-      li a {
+      li a,
+      span {
+        cursor: pointer;
         outline: none;
         text-decoration: none;
         color: #888;
         transition: .3s ease-in-out all;
       }
 
-      li:hover,
-      li:active,
-      li:focus {
+      li a:hover,
+      li a:active,
+      li a:focus,
+      span:hover,
+      span:active,
+      span:focus {
         color: #fff;
       }
 
       i::before {
         transition: .3s ease-in-out all;
         color: #888;
-      }
       }
 
       li:hover i::before {
@@ -104,4 +117,4 @@ const Footer = () => (
   </footer >
 );
 
-export default Footer;
+export default withTranslation('common')(Footer);

@@ -1,8 +1,10 @@
-const Work = () => (
+import { withTranslation } from "../i18n";
+
+const Work = ({ t }) => (
   <section className="block work">
     <article>
-      <h2>Références</h2>
-      <p>Ils nous ont fait pleinement confiance.</p>
+      <h2>{t('works_title')}</h2>
+      <p>{t('works_text')}</p>
     </article>
     <ul>
       <li>
@@ -368,4 +370,4 @@ const Work = () => (
   </section>
 );
 
-export default Work;
+export default withTranslation('common')(Work);

@@ -2,6 +2,7 @@ import '../node_modules/@pyxeldev/reset-css/reset.min.css';
 import '../styles/index.scss';
 import '../public/icons.css';
 import Head from 'next/head';
+import { appWithTranslation } from '../i18n';
 
 function App({ Component, pageProps }) {
   return (
@@ -34,4 +35,4 @@ function App({ Component, pageProps }) {
   );
 }
 
-export default App;
+export default appWithTranslation(App);

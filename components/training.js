@@ -1,14 +1,15 @@
 import Link from 'next/link';
+import { withTranslation } from '../i18n';
 
-const Training = () => (
+const Training = ({ t }) => (
   <section className="block training">
     <article>
-      <h2>Formations</h2>
-      <p>Nous assurons des formations au sein de clients désireux de se former aux nouvelles technologies. Notre expertise couvre une large panel de compétences. Pour en savoir plus, contactez nous.</p>
+      <h2>{t('training_title')}</h2>
+      <p>{t('training_text1')}</p>
       <br />
-      <p>Vous pouvez aussi vosu rendre sur la page Formations, afin de découvrir les formations en ligne que nous proposons.</p>
+      <p>{t('training_text2')}</p>
       <div>
-        <Link href="/training"><a>Voir les formations</a></Link>
+        <Link href="/training"><a>{t('training_button')}</a></Link>
       </div>
     </article>
     <style jsx>{`
@@ -46,4 +47,4 @@ const Training = () => (
   </section>
 );
 
-export default Training;
+export default withTranslation('common')(Training);

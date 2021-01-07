@@ -1,4 +1,6 @@
-const Presentation = () => (
+import { withTranslation } from "../i18n";
+
+const Presentation = ({ t }) => (
   <section className="block presentation">
     <div className="hero">
       <figure>
@@ -21,8 +23,7 @@ const Presentation = () => (
         </svg>
       </figure>
       <article>
-        <p>Artisan du web, spécialisé en création d'applications web et mobile, mais aussi en intégration et ergonomie.
-        Sans oublier les bases de données, le déploiement et maintenance des sites et applications.</p>
+        <p>{t('presentation')}</p>
       </article>
     </div>
     <style jsx>{`
@@ -61,4 +62,4 @@ const Presentation = () => (
   </section>
 );
 
-export default Presentation;
+export default withTranslation('common')(Presentation);

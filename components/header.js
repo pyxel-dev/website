@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { withTranslation } from '../i18n';
 
-const Header = () => (
+const Header = ({ t }) => (
   <header className="header" role="heading">
     <Link href="/">
     <a>
@@ -17,8 +18,8 @@ const Header = () => (
     </Link>
     <nav role="navigation">
       <ul>
-        <li><Link href="/training"><a>Formations</a></Link></li>
-        <li><Link href="/project"><a>Projets</a></Link></li>
+        <li><Link href="/project"><a>{t('header_project')}</a></Link></li>
+        <li><Link href="/training"><a>{t('header_training')}</a></Link></li>
       </ul>
     </nav>
     <style jsx>{`
@@ -54,4 +55,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default withTranslation('common')(Header);

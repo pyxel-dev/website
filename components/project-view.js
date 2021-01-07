@@ -1,14 +1,15 @@
+import { withTranslation } from "../i18n";
 
-const ProjectView = () => (
+const ProjectView = ({ t }) => (
   <main>
     <section className="block">
-    <h1>Projets</h1>
+    <h1>{t('header_project')}</h1>
       <article className="project">
         <a href="https://chaton.io" target="_blank">
           <img src="/project/chaton.png"
             alt="Chaton" decoding="async" />
           <h2>Chaton</h2>
-          <p>Chaton est une web app de chat vidéo en 1:1. Elle est complètement open source, et repose sur le standard WebRTC qui fournit une connexion peer-to-peer (P2P). Vous pouvez créer une salle et partager son ID avec une autre personne pour discuter via vidéo. Il n'y a pas de système de login, le but étant de créer une conversation vidéo rapidement.</p>
+          <p>{t('project_chaton_text')}</p>
         </a>
       </article>
     </section>
@@ -58,4 +59,4 @@ const ProjectView = () => (
   </main>
 );
 
-export default ProjectView;
+export default withTranslation('common')(ProjectView);

@@ -1,26 +1,28 @@
-const Contact = () => (
+import { withTranslation } from "../i18n";
+
+const Contact = ({ t }) => (
   <section className="block contact">
     <article>
-      <h2>Nous contacter</h2>
-      <p>On peut commencer par faire connaissance. Si vous avez une mission qui vaille le coup sur Toulouse ou en remote, n'héistez pas à nous contacter. Et si vous souhaitez dispenser une formation, c'est au même endroit.</p>
+      <h2>{t('contact_title')}</h2>
+      <p>{t('contact_text')}</p>
       <div className="contact">
         <form name="contact" method="POST" action="/?success=true" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
           <section className="form-infos">
             <div>
-              <label htmlFor="name">Votre nom</label>
+              <label htmlFor="name">{t('contact_field_name')}</label>
               <input type="text" id="name" name="name" placeholder="Marty McFly" required />
             </div>
             <div>
-              <label htmlFor="email">Votre email</label>
+              <label htmlFor="email">{t('contact_field_email')}</label>
               <input type="email" id="email" name="email" placeholder="back2future@cafe80.com" required />
             </div>
           </section>
           <section>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{t('contact_field_message')}</label>
             <textarea id="message" name="message" placeholder="Ne soyez pas timide" required></textarea>
           </section>
-          <button type="submit">Envoyer</button>
+          <button type="submit">{t('contact_submit')}</button>
         </form>
       </div>
     </article>
@@ -109,4 +111,4 @@ const Contact = () => (
   </section>
 );
 
-export default Contact;
+export default withTranslation('common')(Contact);

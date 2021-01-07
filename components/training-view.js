@@ -1,18 +1,19 @@
+import { withTranslation } from "../i18n";
 
-const TrainingView = () => (
+const TrainingView = ({ t }) => (
   <main>
     <section className="block">
-    <h1>Formations</h1>
+    <h1>{t('header_training')}</h1>
       <article className="training">
         <a href="https://www.udemy.com/course/decouverte-angular/?referralCode=468BDCCD8BBF06E2737A" target="_blank">
           <img src="/training/decouverte_angular.png"
             alt="A la découverte d'Angular" decoding="async" />
-          <h2>À la découverte d'Angular</h2>
-          <p>Découvrez notre première formation dédiée à Angular. Apprenez tout ce dont vous avez besoin pour créer vos sites et applications à travers plus de 30 cours et plus de 9h de formation.</p>
+          <h2>{t('training_angular_title')}</h2>
+          <p>{t('training_angular_text')}</p>
         </a>
       </article>
       <article className="training coming">
-        <h2>D'autres formations sont à venir prochainement</h2>
+        <h2>{t('training_other')}</h2>
       </article>
     </section>
 
@@ -68,4 +69,4 @@ const TrainingView = () => (
   </main>
 );
 
-export default TrainingView;
+export default withTranslation('common')(TrainingView);

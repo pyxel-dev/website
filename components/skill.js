@@ -1,9 +1,10 @@
-const Skill = () => (
+import { withTranslation } from "../i18n";
+
+const Skill = ({ t }) => (
   <section className="block skill">
     <article>
-      <h2>Nos compétences</h2>
-      <p>Notre domaines de compétences couvre un large champ de possibilités pour votre projet. Vous y trouverez votre
-    bonheur.</p>
+      <h2>{t('skills_title')}</h2>
+      <p>{t('skills_text')}</p>
     </article>
     <ul>
       <li>
@@ -162,4 +163,4 @@ const Skill = () => (
   </section>
 );
 
-export default Skill;
+export default withTranslation('common')(Skill);
