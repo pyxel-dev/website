@@ -6,8 +6,10 @@ import Training from '../components/training';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import { useState, useEffect } from 'react';
+import { useTranslation } from '../i18n';
 
 export default function Home() {
+  const { t } = useTranslation('common');
   const [success, setSuccess] = useState(false);
   useEffect(() => {
     if (window.location.search.includes('success')) {
@@ -23,7 +25,7 @@ export default function Home() {
     <>
       {success && (
         <div className="success">
-          <p>Votre message a bien été envoyé.</p>
+          <p>{t('message_sent')}</p>
           <button onClick={close} autoFocus>&times;</button>
         </div>
       )}

@@ -1,4 +1,5 @@
 import { withTranslation } from "../i18n";
+import Subscribe from "./subscribe";
 
 const Contact = ({ t }) => (
   <section className="block contact">
@@ -7,7 +8,7 @@ const Contact = ({ t }) => (
       <p>{t('contact_text')}</p>
       <div className="contact">
         <form name="contact" method="POST" action="/?success=true" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <section className="form-infos">
             <div>
               <label htmlFor="name">{t('contact_field_name')}</label>
@@ -26,6 +27,7 @@ const Contact = ({ t }) => (
         </form>
       </div>
     </article>
+    <Subscribe />
     <style jsx>{`
       h2 {
         margin-bottom: 2rem;
