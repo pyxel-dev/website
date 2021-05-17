@@ -5,6 +5,8 @@ import Head from 'next/head';
 import { appWithTranslation } from '../i18n';
 
 function App({ Component, pageProps }) {
+  const isBrowser = typeof window !== 'undefined';
+
   return (
     <>
       <Head>
@@ -12,15 +14,15 @@ function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>Pyxel</title>
         <link rel="shortcut icon" href="/images/favicon.png" />
-        <!--<script data-host="https://myanalytics.dev" data-dnt="false" src="https://myanalytics.dev/js/script.js" id="ZwSg9rf6GA" async defer></script>-->
-        <script id="myownstats" data-oms-id="Azerty123" src="https://myownstats.com/tag.js" async></script>
-        <!--<script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-179032245-1`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+        {isBrowser && <script id="myownstats" data-oms-id="Azerty123" src="https://myownstats.com/tag.js" async defer></script>}
+        <script data-host="https://myanalytics.dev" data-dnt="false" src="https://myanalytics.dev/js/script.js" id="ZwSg9rf6GA" async defer></script>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=UA-179032245-1`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -28,8 +30,8 @@ function App({ Component, pageProps }) {
               page_path: window.location.pathname,
             });
           `,
-            }}
-          />-->
+          }}
+        />
       </Head>
       <Component {...pageProps} />
     </>
