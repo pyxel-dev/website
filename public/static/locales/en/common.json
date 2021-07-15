@@ -17,8 +17,8 @@
   "contact_field_message": "Your message",
   "contact_submit": "Submit",
   "message_sent": "Your message has been sent.",
-  "subscribe_available": "We are available",
-  "subscribe_not_available": "We are not available (Q1 2022)",
+  "subscribe_available": "We are available !",
+  "subscribe_not_available": "We are not available",
   "subscribe_note_first": "You can also enter your email to be kept informed of the availability of our team.",
   "subscribe_note_second": "You will not receive anything other than an email when our team is available.",
   "subscribe_stay_tuned": "Stay tuned",
@@ -26,5 +26,6 @@
   "training_angular_title": "Discover Angular (French)",
   "training_angular_text": "Discover our first training dedicated to Angular. Learn everything you need to create your sites and applications through more than 30 courses and over 9 hours of training.",
   "training_other": "Another training coming soon",
-  "project_chaton_text": "Chaton is a simple 1:1 video chat, full open source. You can create a room and share the ID with an another person for chat together. It's built with WebRTC technology, for a peer-to-peer exchange, without registration."
+  "project_chaton_text": "Chaton is a simple 1:1 video chat, full open source. You can create a room and share the ID with an another person for chat together. It's built with WebRTC technology, for a peer-to-peer exchange, without registration.",
+  "project_biorhythm_text": "The biorhythm theory is the pseudoscientific idea that our daily lives are significantly affected by rhythmic cycles. The idea was developed by Wilhelm Fliess in the late 19th century, and was popularized in the United States in late 1970s."
 }

@@ -4,12 +4,20 @@ const ProjectView = ({ t }) => (
   <main>
     <section className="block">
     <h1>{t('header_project')}</h1>
-      <article className="project">
+    <article className="project">
         <a href="https://chaton.io" target="_blank">
           <img src="/project/chaton.png"
             alt="Chaton" decoding="async" />
           <h2>Chaton</h2>
           <p>{t('project_chaton_text')}</p>
+        </a>
+      </article>
+      <article className="project">
+        <a href="https://biorhythm.app" target="_blank">
+          <img src="/project/biorhythm.png"
+            alt="Biorhythm" decoding="async" />
+          <h2>Biorhythm</h2>
+          <p>{t('project_biorhythm_text')}</p>
         </a>
       </article>
     </section>

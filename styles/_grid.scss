@@ -1,5 +1,0 @@
-@for $i from 1 through 12 {
-  .col-#{$i} { width: calc(100% / 12 * #{$i}); }
-  .col-#{$i}-offset { margin-left: calc(100% / 12 * #{$i}); }
-  .col-#{$i}-min { min-width: calc(100% / 12 * #{$i}); }
-}

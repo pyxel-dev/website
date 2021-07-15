@@ -1,11 +1,20 @@
 import { withTranslation } from "../i18n";
-import Subscribe from "./subscribe";
+
+const available = false;
+const availabilityDate = '(Q1 2022)';
 
 const Contact = ({ t }) => (
   <section className="block contact">
     <article>
       <h2>{t('contact_title')}</h2>
       <p>{t('contact_text')}</p>
+      {available ?
+        (
+          <div className="available">{t('subscribe_available')}</div>
+        ) : (
+          <div className="available no">{t('subscribe_not_available')} {availabilityDate}</div>
+        )
+      }
       <div className="contact">
         <form name="contact" method="POST" action="/?success=true" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
@@ -27,7 +36,7 @@ const Contact = ({ t }) => (
         </form>
       </div>
     </article>
-    <Subscribe />
+    {/* <Subscribe /> */}
     <style jsx>{`
       h2 {
         margin-bottom: 2rem;
@@ -108,6 +117,17 @@ const Contact = ({ t }) => (
       button:hover {
         background-color: #000;
         color: #fff;
+      }
+
+      .available {
+        margin: 1rem auto;
+        font-size: 1rem;
+        font-weight: bold;
+        color: green;
+      }
+
+      .available.no {
+        color: red;
       }
     `}</style>
   </section>

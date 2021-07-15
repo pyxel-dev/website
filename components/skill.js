@@ -28,6 +28,10 @@ const Skill = ({ t }) => (
         <span>React</span>
       </li>
       <li>
+        <i className="icon-next-dot-js"></i>
+        <span>NextJS</span>
+      </li>
+      <li>
         <i className="icon-node-dot-js"></i>
         <span>NodeJS</span>
       </li>
@@ -38,10 +42,6 @@ const Skill = ({ t }) => (
       <li>
         <i className="icon-babel"></i>
         <span>Babel</span>
-      </li>
-      <li>
-        <i className="icon-gulp"></i>
-        <span>Gulp</span>
       </li>
       <li>
         <i className="icon-webpack"></i>

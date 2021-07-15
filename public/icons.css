@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src: url('icons/icons.eot?465jlr');
-  src: url('icons/icons.eot?465jlr#iefix') format('embedded-opentype'),
-    url('icons/icons.ttf?465jlr') format('truetype'),
-    url('icons/icons.woff?465jlr') format('woff'),
-    url('icons/icons.svg?465jlr#icons') format('svg');
+  src:  url('icons/icons.eot?2t1zmo');
+  src:  url('icons/icons.eot?2t1zmo#iefix') format('embedded-opentype'),
+    url('icons/icons.ttf?2t1zmo') format('truetype'),
+    url('icons/icons.woff?2t1zmo') format('woff'),
+    url('icons/icons.svg?2t1zmo#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,185 +29,112 @@ i {
   content: "\e900";
   color: #ff7c00;
 }
-
 .icon-adobephotoshop:before {
   content: "\e901";
   color: #00c8ff;
 }
-
 .icon-amazonaws:before {
   content: "\e902";
 }
-
 .icon-angular:before {
   content: "\e903";
   color: #dd0031;
 }
-
-.icon-apachecordova:before {
-  content: "\e904";
-  color: #e8e8e8;
-}
-
 .icon-babel:before {
-  content: "\e906";
+  content: "\e904";
   color: #f9dc3e;
 }
-
 .icon-bootstrap:before {
-  content: "\e907";
+  content: "\e905";
   color: #563d7c;
 }
-
 .icon-css3:before {
-  content: "\e908";
+  content: "\e906";
   color: #1572b6;
 }
-
 .icon-facebook:before {
-  content: "\e90a";
+  content: "\e91a";
   color: #1877f2;
 }
-
 .icon-git:before {
-  content: "\e90b";
+  content: "\e907";
   color: #f05032;
 }
-
 .icon-github:before {
-  content: "\e90c";
+  content: "\e908";
 }
-
 .icon-gitlab:before {
-  content: "\e90d";
+  content: "\e909";
   color: #fca121;
 }
-
 .icon-graphql:before {
-  content: "\e909";
+  content: "\e90a";
   color: #e10098;
 }
-
 .icon-gulp:before {
-  content: "\e90e";
+  content: "\e90b";
   color: #da4648;
 }
-
 .icon-html5:before {
-  content: "\e90f";
+  content: "\e90c";
   color: #e34f26;
 }
-
 .icon-ionic:before {
-  content: "\e905";
+  content: "\e90d";
   color: #3880ff;
 }
-
 .icon-javascript:before {
-  content: "\e910";
+  content: "\e90e";
   color: #f7df1e;
 }
-
-.icon-jest:before {
-  content: "\e911";
-  color: #c21325;
-}
-
 .icon-linkedin:before {
-  content: "\e912";
+  content: "\e91b";
   color: #0077b5;
 }
-
 .icon-mongodb:before {
-  content: "\e925";
+  content: "\e90f";
   color: #47a248;
 }
-
 .icon-mysql:before {
-  content: "\e913";
+  content: "\e910";
   color: #4479a1;
 }
-
-.icon-nginx:before {
-  content: "\e914";
-  color: #269539;
+.icon-next-dot-js:before {
+  content: "\e911";
 }
-
 .icon-node-dot-js:before {
-  content: "\e915";
+  content: "\e912";
   color: #393;
 }
-
-.icon-npm:before {
-  content: "\e916";
-  color: #cb3837;
-}
-
 .icon-postgresql:before {
-  content: "\e917";
+  content: "\e913";
   color: #336791;
 }
-
-.icon-postman:before {
-  content: "\e918";
-  color: #ff6c37;
-}
-
-.icon-prettier:before {
-  content: "\e919";
-  color: #f7b93e;
-}
-
 .icon-react:before {
-  content: "\e91a";
+  content: "\e914";
   color: #61dafb;
 }
-
 .icon-sketch:before {
-  content: "\e91b";
+  content: "\e915";
   color: #f7b500;
 }
-
-.icon-sublimetext:before {
-  content: "\e91c";
-  color: #ff9800;
-}
-
 .icon-swift:before {
-  content: "\e91d";
+  content: "\e916";
   color: #fa7343;
 }
-
 .icon-twitter:before {
-  content: "\e91e";
+  content: "\e91c";
   color: #1da1f2;
 }
-
 .icon-typescript:before {
-  content: "\e91f";
+  content: "\e917";
   color: #007acc;
 }
-
-.icon-visualstudiocode:before {
-  content: "\e920";
-  color: #007acc;
-}
-
-.icon-vue-dot-js:before {
-  content: "\e921";
-  color: #4fc08d;
-}
-
 .icon-webpack:before {
-  content: "\e922";
+  content: "\e918";
   color: #8dd6f9;
 }
-
-.icon-webstorm:before {
-  content: "\e923";
-}
-
 .icon-wordpress:before {
-  content: "\e924";
+  content: "\e919";
   color: #21759b;
 }

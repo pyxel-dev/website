@@ -6,6 +6,7 @@ import { appWithTranslation } from '../i18n';
 
 function App({ Component, pageProps }) {
   const isBrowser = typeof window !== 'undefined';
+  const isProd = process.env.NODE_ENV === "production";
 
   return (
     <>
@@ -14,7 +15,7 @@ function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>Pyxel</title>
         <link rel="shortcut icon" href="/images/favicon.png" />
-        {isBrowser && <script id="myownstats" data-oms-id="Azerty123" src="https://myownstats.com/tag.js" async defer></script>}
+        {isBrowser && isProd && <script id="myownstats" data-oms-id="Azerty123" src="https://myownstats.com/tag.js" async defer></script>}
         <script data-host="https://myanalytics.dev" data-dnt="false" src="https://myanalytics.dev/js/script.js" id="ZwSg9rf6GA" async defer></script>
         <script
           async
