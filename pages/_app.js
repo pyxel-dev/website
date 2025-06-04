@@ -15,24 +15,7 @@ function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>Pyxel</title>
         <link rel="shortcut icon" href="/images/favicon.png" />
-        {isBrowser && isProd && <script id="myownstats" data-oms-id="Azerty123" src="https://myownstats.com/tag.js" async defer></script>}
-        <script data-host="https://myanalytics.dev" data-dnt="false" src="https://myanalytics.dev/js/script.js" id="ZwSg9rf6GA" async defer></script>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=UA-179032245-1`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-179032245-1', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
+        <script defer src="https://stats.pyxel.dev/script.js" data-website-id="d0499688-fee3-479e-bb44-fc1a34f5a56b"></script>
       </Head>
       <Component {...pageProps} />
     </>
